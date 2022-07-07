@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamables</title>
+    <script
+			src="https://kit.fontawesome.com/744be8be66.js"
+			crossorigin="anonymous"
+		></script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./pages.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <a href="/" class="logo"
+            ><span class="logo-character left">{</span>JD<span
+                class="logo-character right"
+                >}</span
+            ></a
+        >
+
+        <nav>
+            <div class="hamburger-menu" id="hamburgerBtn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav class="navbar">
+                <div class="close-btn">
+                    <button id="closeBtn">X</button>
+                </div>
+
+                <ul class="navbar-list">
+                    <li class="link-item"><a href="../#home" class="link"><i class="fa-solid fa-house link-icon"><span class="link-text">Home</span></i></a></li>
+                    <li class="link-item"><a href="../#about" class="link"><i class="fa-solid fa-user link-icon"><span class="link-text">About</span></i></a></li>
+                    <li class="link-item"><a href="../#skills" class="link"><i class="fa-solid fa-screwdriver-wrench link-icon"><span class="link-text">Skills</span></i></a></li>
+                    <li class="link-item"><a href="../#projects" class="link"><i class="fa-solid fa-code link-icon"><span class="link-text">Projects</span></i></a></li>
+                    <li class="link-item"><a href="../#contact" class="link"><i class="fa-solid fa-message link-icon"><span class="link-text">Contact</span></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    </header>
+
+    <div class="transition">
+    <main class="project-intro section">
+        <div class="content-wrapper">
+            <h1 class="section-title">Streamables</h1>
+        <div class="intro-content">
+            <div class="img-container">
+                <img src="../images/streamables-screenshot.png" alt="streamables screenshot" class="screenshot-img">
+            <img src="../images/action-screenshot.png" alt="streamables screenshot 2" class="screenshot-img">
+        </div>
+        <p>Streamables is a project I built that users can use to  find any show or movie and see what streaming platform they can watch it on in Canada as well as view the trailer. If a show or movie is playing on Netflix for example, the user can select Netflix and it will take them directly to that show or movie on Netflix's website/app. Users must have an account with the selected streaming platform for the show or movie to be played.</p>
+        <p class="semi-bold"><span class="span-color">Stack used:</span> React, CSS, Netlify.</p>
+        <div class="buttons">
+            <a href="https://github.com/TechNerdJames/streamables" target="_blank" rel="noreferrer" class="project-button project-links"><i class="fa-solid fa-code project-icon"></i>Code</a>
+            <a href="https://streamables.netlify.app/" target="_blank" rel="noreferrer" class="project-button project-links"><i class="fa-solid fa-eye project-icon"></i>Live Site</a>
+        </div>
+    </div>
+</div>
+</main>
+
+<section class="purpose section">
+    <div class="content-wrapper">
+        <h2 class="section-title">Purpose</h2>
+        <div class="purpose-content">
+            <p>The purpose of this project was mainly because I wanted to practice my React knowledge of props, state, and React hooks as well as making API calls in React. I know ideas and apps like this already exist but I always wanted to build my own version of an app that I can personally use to tell me where I can watch a specific show or movie in Canada.</p>
+        </div>
+    </div>
+</section>
+
+<section class="challenges section">
+    <div class="content-wrapper">
+        <h2 class="section-title">Challenges <span class="color">&</span> Solutions</h2>
+        <div class="challenges-content">
+            <p>The biggest challenge I faced for this project was how to hide my API keys. At first I thought it would be enough to just hide them in an .env file but I learned that isn't good practice. To solve this, I did some research and learned that it's best to have a backend server to hide that information however, I didn't have any backend knowledge yet. I watched some Youtube videos and set up my own backend server using Node.js and Express however, with my limited knowledge of the backend, I couldn't get my API calls to work the way I wanted. I then learned that Netlify has serverless functions which work as API endpoints that run automatically when called and used that to hide my API keys and fetch data from the APIs I used.</p>
+            <p>Another challenge I faced was with the original API I planned to use. I knew at the base of my project, I wanted to display what streaming platforms the shows and movies were on in Canada and take the user directly to those platforms. The API I used for that was Utelly however they didn't have the details I wanted to display to the user when they clicked on the show or movie they were looking for. To solve this, I had to use 2 more APIs, OMDb to display the show or movie details and IMDb to get the trailer for the user's selected choice.</p>
+            <p>A third challenge that I faced was what to do for movies and shows that an image poster wasn't provided by the OMDb API. To solve this, I added my own placeholder "Poster not available" image if the poster from the API didn't exist. </p>
+
+        </div>
+    </div>
+</section>
+<section class="lessons section">
+    <div class="content-wrapper">
+        <h2 class="section-title">Lessons <span class="color">&</span> Takeaways</h2>
+        <div class="lessons-content">
+            <p>I really enjoyed building this project as I learned a lot and it forced me to challenge myself to build something I didn't entirely know how to build at first. It taught me to find and come up with solutions to some of the challenges I faced detailed above and to have an attitude of perseverance and resilience.</p>
+            <p>This project helped me solidify my React knowledge/skill and it taught me how to manipulate props, states and hooks in unique ways to display information to users the way I wanted.</p>
+            <p> It also taught me a valuable lesson about why and when it is important to have and use a backend. With my limited backend knowledge, I also got to learn about serverless functions and Netlify functions and how they handle the server-side code.</p>
+            <p>Lastly, I learned about debouncing and why it's important for projects like this because you don't want to be making an API call for every letter a user types into a search bar.</p>
+
+        </div>
+    </div>
+</section>
+</div>
+<footer>
+    <div class="content-wrapper">
+        <p>Designed and built by James Dryden &copy; 2022.</p>	
+    </div>
+</footer>
+    <script src="../script.js"></script>
+</body>
+</html>

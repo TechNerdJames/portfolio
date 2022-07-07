@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>James Dryden Portfolio</title>
+		<script
+			src="https://kit.fontawesome.com/744be8be66.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<!----- Header ----->
+		<header>
+            <div class="header-container">
+			<a href="/" class="logo"
+				><span class="logo-character left">{</span>JD<span
+					class="logo-character right"
+					>}</span
+				></a
+			>
+
+			<nav>
+				<div class="hamburger-menu" id="hamburgerBtn">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+
+				<nav class="navbar">
+					<div class="close-btn">
+						<button id="closeBtn">X</button>
+					</div>
+
+					<ul class="navbar-list">
+						<li class="link-item"><a href="#hero" class="link"><i class="fa-solid fa-house link-icon"><span class="link-text">Home</span></i></a></li>
+						<li class="link-item"><a href="#about" class="link"><i class="fa-solid fa-user link-icon"><span class="link-text">About</span></i></a></li>
+						<li class="link-item"><a href="#skills" class="link"><i class="fa-solid fa-screwdriver-wrench link-icon"><span class="link-text">Skills</span></i></a></li>
+						<li class="link-item"><a href="#projects" class="link"><i class="fa-solid fa-code link-icon"><span class="link-text">Projects</span></i></a></li>
+						<li class="link-item"><a href="#contact" class="link"><i class="fa-solid fa-message link-icon"><span class="link-text">Contact</span></i></a></li>
+					</ul>
+				</div>
+			</nav>
+        </div>
+		</header>
+
+		<!----- Hero Section ----->
+		<section class="hero sections-container" id="hero">
+			<div class="overlay"></div>
+			<div class="hero-content fade-in">
+				<h1>Hi, I'm <span>James Dryden</span></h1>
+				<p class="hero-p">
+					I'm a<span id="typedText"></span><span id="cursor">&nbsp;</span>
+				</p>
+                <div class="contact-icons">
+                    <a href="https://github.com/TechNerdJames" target="_blank" rel="noreferrer"><i class="fa-brands fa-github contact-icon"></i></a>
+                    <a href="mailto:jamesdryden7@gmail.com"><i class="fa-solid fa-envelope contact-icon"></i></a>
+                    <a href="https://www.linkedin.com/in/jamesadryden/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin contact-icon"></i></a>
+                </div>
+				<div class="cta-container">
+					<!-- <a href="#contact" class="hero-cta"><span class="cta-icon"><i class="fa-solid fa-message"></i></span>Get in Touch</a> -->
+					<a href="#" class="hero-cta"><span class="cta-icon"><i class="fa-solid fa-file-lines"></i></span>Resume</a>
+				</div>
+			</div>
+			<a href="#about"><i class="fa-solid fa-arrow-down fade-in"></i></a>
+		</section>
+
+		<!----- About Section ----->
+		<section class="section about" id="about">
+			<div class="content-wrapper slide-in from-left">
+			<h2 class="section-title">About Me</h2>
+            <div class="about-content">
+				<img src="./images/me.jpeg" alt="picture of me" class="about-img">
+            <div class="about-text">
+            <h3>Hey! I'm <span class="about-name">James Dryden</span>, a Front End Software Developer based in Ontario, Canada.</h3>
+            <p>I have a passion for the tech field  in general but more specifically for coding, creating, and building exciting web apps that solve problems. My web development and coding journey started in the summer of 2021 when I decided to finally pursue my long time passion for tech and computers. My passion grew deeper once I discovered web development and fell in love with coding. There's something beautiful and almost magical about writing code and having it come to life on a webpage, it also allows me to create anything I imagine.</p>
+            <p>When I'm not coding, you can find me  somewhere watching something sci-fi/fantasy related such as Star Wars. I also enjoy playing video games, watching anime, and watching basketball.</p>
+        </div>
+        </div>
+			</div>
+		</div>
+		</section>
+
+		<!----- Skills Section ----->
+		<section class="skills section" id="skills">
+			<div class="content-wrapper fade-up">
+			<h2 class="section-title">Skills & Tools</h2>
+			<div class="skills-content">
+				<p>Below are the skills and tools that I've been working with recently to build and develop responsive web applications and websites:</p>
+				<div class="skill-icons">
+					<figure>
+						<img src="./images/javascript.png" alt="Javascript logo">
+						<figcaption>JavaScript</figcaption>
+					</figure>
+					<figure>
+						<img src="./images/react.png" alt="React logo">
+						<figcaption>React</figcaption>
+					</figure>
+					<figure>
+						<img src="./images/html5.png" alt="HTML logo">
+						<figcaption class="padding">HTML</figcaption>
+					</figure>
+					<figure>
+						<img src="./images/css3.png" alt="CSS logo">
+						<figcaption class="padding">CSS</figcaption>
+					</figure>
+					<figure>
+						<img src="./images/git.png" alt="Git logo">
+						<figcaption class="padding">Git</figcaption>
+					</figure>
+					<figure>
+						<img src="./images/github.png" alt="Github logo">
+						<figcaption>Github</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+		</section>
+
+		<!----- Projects Section ----->
+		<section class="projects section" id="projects">
+			<div class="content-wrapper">
+			<h2 class="section-title">Projects</h2> 
+				<div class="project-card slide-in from-left">
+					<div class="flex-container">
+						<div class="col1">
+					<img src="./images/action-screenshot.png" alt="streamables screenshot" class="project-img">
+				</div>
+				<div class="col2">
+					<h3>Streamables</h3>
+					<p>A web app that allows users to search for a show or movie and see what streaming platform it is viewable on in Canada as well as take the user there directly or they can watch the trailer.</p>
+					<p class="semi-bold"><span class="span-color">Stack:</span> React, CSS, Netlify.</p>
+					<a href="./pages/streamables.html" target="_blank" class="project-links view semi-bold">More Info <span class="project-arrow">></span></a>
+					<div class="buttons">
+						<a href="https://github.com/TechNerdJames/streamables" target="_blank" rel="noreferrer"  class="project-button project-links"><i class="fa-solid fa-code project-icon"></i>Code</a>
+						<a href="https://streamables.netlify.app/" target="_blank" rel="noreferrer" class="project-button project-links"><i class="fa-solid fa-eye project-icon"></i>Live Site</a>
+					</div>
+				</div>
+				</div>
+				</div>
+				
+				<div class="project-card slide-in from-right">
+					<div class="flex-container">
+						<div class="col1">
+					<img src="./images/allischeesecake-screenshot1.png" alt="streamables screenshot" class="project-img">
+					</div>
+					<div class="col2">
+					<h3>Alli's Cheesecake</h3>
+					<p>A fully responsive website for a client that owns a small part time cheesecake business.</p>
+					<p class="semi-bold"><span class="span-color">Stack:</span> HTML, CSS, JavaScript, Snipcart, Netlify.</p>
+					<a href="./pages/allischeesecake.html" target="_blank" class="project-links view semi-bold">More Info <span class="project-arrow">></span></a>
+					<div class="buttons">
+						<a href="https://github.com/TechNerdJames/allis-cheesecake" target="_blank" rel="noreferrer" class="project-button project-links"><i class="fa-solid fa-code project-icon"></i>Code</a>
+						<a href="https://allischeesecake.netlify.app/" target="_blank" rel="noreferrer" class="project-button project-links"><i class="fa-solid fa-eye project-icon"></i>Live Site</a>
+					</div>
+				</div>
+				</div>
+				</div>
+
+				<div class="project-card slide-in from-left">
+					<div class="flex-container">
+						<div class="col1">
+					<img src="./images/seinfeldgame-screenshot.png" alt="streamables screenshot" class="project-img last-img">
+					</div>
+					<div class="col2">
+					<h3>The Seinfeld Game</h3>
+					<p>A responsive web app game based on the character of the tv show Seinfeld. Users have to guess which character said the given quote.</p>
+					<p class="semi-bold"><span class="span-color">Stack:</span> HTML, CSS, JavaScript.</p>
+					<a href="./pages/seinfeldgame.html" target="_blank" class="project-links view semi-bold">More Info <span class="project-arrow">></span></a>
+					<div class="buttons">
+						<a href="https://github.com/TechNerdJames/seinfeld-game" target="_blank" rel="noreferrer" class="project-button project-links"><i class="fa-solid fa-code project-icon"></i>Code</a>
+						<a href="https://seinfeldgame.netlify.app/" target="_blank" rel="noreferrer"  class="project-button project-links"><i class="fa-solid fa-eye project-icon"></i>Live Site</a>
+					</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		</section>
+
+		<!----- Contact Section ----->
+		<section class="section contact" id="contact">
+			<div class="content-wrapper fade-in">
+			<h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+				<p>Feel free to reach out  if you have any questions or want to connect. </p>
+				<div class="contact-buttons">
+				<a href="mailto:jamesdryden7@gmail.com" class="contact-btn"><i class="fa-solid fa-envelope contact-method"></i>Email</a>
+				<a href="https://www.linkedin.com/in/jamesadryden/" target="_blank" rel="noreferrer" class="contact-btn"><i class="fa-brands fa-linkedin contact-method"></i>LinkedIn</a>
+			</div>
+        </div>
+        </div>
+		</section>
+
+		<!----- Footer Section ----->
+		<footer>
+			<div class="content-wrapper">
+				
+				<p>Designed and built by James Dryden &copy; 2022.</p>	
+			</div>
+			
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
