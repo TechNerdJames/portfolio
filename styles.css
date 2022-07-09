@@ -348,11 +348,7 @@ header {
 .fa-arrow-down {
 	color: var(--text-color);
 	font-size: 1.25rem;
-
-	/* animation: bounce 1.5s ease infinite; */
-
 	cursor: pointer;
-	display: block;
 }
 
 .hero-arrow {
