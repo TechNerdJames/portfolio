@@ -353,6 +353,9 @@ header {
 	bottom: 50px;
 	animation: bounce 1.5s ease infinite;
 	cursor: pointer;
+}
+
+.hero-arrow {
 	display: block;
 }
 
