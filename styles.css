@@ -353,6 +353,7 @@ header {
 	bottom: 50px;
 	animation: bounce 1.5s ease infinite;
 	cursor: pointer;
+	display: block;
 }
 
 /* ---------- About Section Styles ---------- */
