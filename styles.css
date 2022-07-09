@@ -2,12 +2,8 @@
 
 :root {
 	--text-color: #fff;
-	--accent-color-primary: #64a2d0;
-	/* --accent-color-primary: #008ad7; */
-	/* --accent-color-primary: #1da1f2; */
-	/* --accent-color-primary: #00bef6; */
-	/* --accent-color-primary: #006eb9; */
 	/* --accent-color-primary: #f8704c; */
+	--accent-color-primary: #38c08f;
 	--accent-color-secondary: #1d1e20;
 	--accent-color-third: #000;
 }
@@ -65,7 +61,7 @@ a {
 }
 
 .span-color {
-	color: #64a2d0;
+	color: var(--accent-color-third);
 }
 
 .fade-in {
@@ -332,18 +328,12 @@ header {
 	transition: 0.3s ease;
 }
 
-.cta-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 2.5rem;
-}
-
 .hero-cta {
 	display: block;
 	border: 2px solid var(--accent-color-primary);
 	padding: 0.8em 1em;
 	border-radius: 5px;
+	margin-top: 2.5rem;
 	font-size: 1rem;
 }
 
@@ -353,11 +343,6 @@ header {
 	color: var(--accent-color-primary);
 	border-color: var(--text-color);
 	transition: 0.3s ease;
-}
-
-.cta-icon {
-	margin-right: 0.2rem;
-	font-size: 0.7rem;
 }
 
 .fa-arrow-down {
@@ -451,9 +436,13 @@ header {
 	text-transform: uppercase;
 }
 
+.view {
+	color: var(--accent-color-third);
+}
+
 .view:hover,
 .view:focus {
-	border-bottom: 3px solid #64a2d0;
+	border-bottom: 3px solid #38c08f;
 	transition: 0.2s ease;
 }
 
@@ -462,7 +451,7 @@ header {
 }
 
 .project-button {
-	border: 2px solid #64a2d0;
+	border: 2px solid #38c08f;
 	border-radius: 5px;
 	padding: 0.5em 1em;
 }
@@ -500,7 +489,7 @@ header {
 
 .contact-btn {
 	color: var(--accent-color-primary);
-	border: 2px solid #64a2d0;
+	border: 2px solid #38c08f;
 	border-radius: 5px;
 	padding: 0.5em 1em;
 }
@@ -529,6 +518,11 @@ footer p {
 }
 
 /* ---------- Media Queries ---------- */
+@media screen and (max-width: 21.875em) {
+	.hero .fa-arrow-down {
+		display: none;
+	}
+}
 
 @media screen and (min-width: 62em) {
 	/* --------- Header Styles --------- */

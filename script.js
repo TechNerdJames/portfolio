@@ -8,12 +8,7 @@ const cursor_span = document.getElementById('cursor');
 const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll('.slide-in');
 const fadeUppers = document.querySelectorAll('.fade-up');
-const phrases = [
-	'Software Developer',
-	'Passionate Coder',
-	'Problem Solver',
-	'Star Wars Enthusiast',
-];
+const phrases = ['Software Developer', 'Passionate Coder', 'Problem Solver'];
 const typingCharDelay = 100;
 const erasingCharDelay = 50;
 const endTextDelay = 2000;
