@@ -348,16 +348,19 @@ header {
 .fa-arrow-down {
 	color: var(--text-color);
 	font-size: 1.25rem;
-	position: absolute;
-	left: 50%;
-	bottom: 50px;
-	animation: bounce 1.5s ease infinite;
+
+	/* animation: bounce 1.5s ease infinite; */
+
 	cursor: pointer;
 	display: block;
 }
 
 .hero-arrow {
 	display: block;
+	animation: bounce 1.5s ease infinite;
+	position: absolute;
+	left: 50%;
+	bottom: 50px;
 }
 
 /* ---------- About Section Styles ---------- */
