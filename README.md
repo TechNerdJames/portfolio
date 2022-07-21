@@ -15,6 +15,8 @@ My goal for this project was to customize and style my porfolio the way I wanted
 
 I really enjoyed building my portfolio and styling it. I learned a lot while building it especially when it comes to styling and responsiveness.
 
+I learned how to use JavaScript to create a typing and erasing words animation and also dived deeper into creating animations in general with CSS.
+
 ## More Projects:
 Take a look at some more of my projects:
 
